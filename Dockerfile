@@ -1,4 +1,4 @@
-FROM neo4j:3.5.14-enterprise
+FROM neo4j:3.5.14
 RUN wget -O plugins/graphaware-server-all.jar https://neo4j-plugins-public.s3.eu-west-1.amazonaws.com/graphaware-server-all-3.5.14.55.jar
 RUN wget -O plugins/graphaware-nlp.jar https://neo4j-plugins-public.s3.eu-west-1.amazonaws.com/nlp-3.5.4.53.18.jar
 RUN wget -O plugins/graphaware-nlp-stanfordnlp.jar https://neo4j-plugins-public.s3.eu-west-1.amazonaws.com/nlp-stanfordnlp-3.5.4.53.18.jar

@@ -6,3 +6,4 @@ RUN wget -O plugins/stanford-english-core-nlp.jar http://nlp.stanford.edu/softwa
 RUN echo "dbms.unmanaged_extension_classes=com.graphaware.server=/graphaware\ncom.graphaware.runtime.enabled=true\ncom.graphaware.module.NLP.1=com.graphaware.nlp.module.NLPBootstrapper\ndbms.security.procedures.whitelist=ga.nlp.*" >> conf/neo4j.conf
 EXPOSE 7474 7473 7687
 ENV NEO4J_AUTH=none
+CMD ["neo4j"]
